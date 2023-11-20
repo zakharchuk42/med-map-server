@@ -5,7 +5,7 @@ import { join } from 'path'
 import * as process from "process";
 
 async function bootstrap() {
-	const app = await NestFactory.create(AppModule, { cors: false })
+	const app = await NestFactory.create(AppModule, { cors: true })
 	app.enableCors({ credentials: true, origin: true })
 	app.use('/uploads', express.static(join(__dirname, '..', '/uploads')))
 
