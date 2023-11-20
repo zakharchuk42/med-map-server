@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "headers": { Access-Control-Allow-Origin: "*" },
+      "headers": { "Access-Control-Allow-Origin": "*" },
       "dest": "src/main.ts",
       "methods": [
         "GET",
